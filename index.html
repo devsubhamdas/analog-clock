@@ -495,7 +495,22 @@
 
         }
 
+/* responsive fix: scale the whole dial instead of refactoring it */
+@media (max-width: 600px) {
+    body {
+        width: auto;       /* cancel the old 600px body */
+        top: 0;            /* cancel the old 120px shift */
+        position: static;
+        overflow-x: hidden;
+    }
+}
 
+@media (max-width: 570px) { .frame { zoom: 0.9; } }
+@media (max-width: 500px) { .frame { zoom: 0.8; } }
+@media (max-width: 440px) { .frame { zoom: 0.7; } }
+@media (max-width: 390px) { .frame { zoom: 0.62; } }
+@media (max-width: 350px) { .frame { zoom: 0.54; } }
+@media (max-width: 310px) { .frame { zoom: 0.46; } }
 
         /* angle tracker */
         /* .angle-tracker { */
